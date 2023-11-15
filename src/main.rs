@@ -1,18 +1,8 @@
-mod greetings;
-//use greetings::default_greeting;
-//use greetings::default_greeting2
-//use greetings::*
-use greetings::{default_greeting, default_greeting2,english, spanish, french};
-
+pub mod greeting;
+use greeting::french;
+use greeting::spanish;
 fn main() {
+    spanish::greet_spanish();
+    french::greet_french();
     println!("Hello, world!");
-    println!("{}" , default_greeting());
-    println!("{}" , default_greeting());
-    println!("My first greeting is", "{}",  "and the second is " ,"{}");
-    english::default_greeting();
-    spanish::default_greeting();
-    french::default_greeting();
 }
-
-
-

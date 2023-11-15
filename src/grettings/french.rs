@@ -1,4 +1,3 @@
-pub fn default_greeting() -> String {
-    let message = String::from("Salut!");
-    message
+pub(crate) fn greet_french(){
+    println!("Salut!");
 }
